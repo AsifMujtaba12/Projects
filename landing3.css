@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+   
+}
+.main {
+    width: 100%;
+    min-height: 100vh;
+
+}
+.overlay{
+    position:relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: transparent;
+
+}
+.text{
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+    padding: 0 10vw;
+    color: white;
+
+}
+.icons {
+    display: flex;
+    gap: 1vw;
+}
+.textright {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icons svg {
+    color:white;
+}
+.textright p {
+    font-size: 12px;
+    width: 40%;
+}
+.text h1 {
+    font-size: 5vw;
+    color: white;
+    font-weight: 500;
+}
+.top{
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(https://media.istockphoto.com/id/669828280/photo/daylight-view-of-mount-everest.jpg?s=2048x2048&w=is&k=20&c=bRo93I1ksAB5l5pzVfc3avltodM40zVPtQa4wE75rC0=);
+    background-size: cover;
+    background-position: 50% 32%;
+
+}
+.bottom {
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+}
+.b1{
+    width: 25%;
+   min-height: inherit;
+    background-color: white;
+    padding: 30px;
+}
+.b1 p {
+    font-size: 12px;
+    margin-top: 20px;
+}
+.b2{
+    width: 25%;
+    min-height: inherit;
+   
+    background-image: url(https://media.istockphoto.com/id/483531245/photo/parachuting.jpg?s=612x612&w=0&k=20&c=XjMWZS24qmEWf8zLFt6_qJKUo-gjg9IvrvxNZRkokGY=);
+
+    background-size: cover;
+    background-position: center;
+
+}
+.b3{
+    width: 20%;
+    min-height: 40vh;
+}
+.b3top {
+    width: 100%;
+    min-height: 20vh;
+
+    background-color: orange;
+    padding: 20px;
+    color: white;
+}
+.b3top p {
+    font-size: 10px;
+}
+.b3botm {
+    width: 100%;
+    min-height: 20vh;
+
+    background-image: url(https://media.istockphoto.com/id/482854945/photo/jump.jpg?s=612x612&w=0&k=20&c=Dwmz17KR8uC563mvUWqkj3IpCeWvdqa182KFOhC9fGI=);
+    background-size: cover;
+    background-position: center;
+
+}
+.b4{
+    width: 30%;
+    min-height: inherit;
+
+    padding:30px;
+    background-color: #444;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+.notfy {
+    margin: top 20px; 
+    display: flex;
+    justify-content: space-between;
+}
+.notfy .photo {
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 50%;
+}
+.notfy p {
+    width: 86%;
+    font-size: 12px;
+}
+@media screen and (max-width: 500px) {
+    .overlay .text {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .overlay.text .textright {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .overlay.text .textright p {
+        width: initial;
+        margin-top: 20px;
+    }
+    .overlay.text .textright .icons {
+        margin-top: 30px;
+    }
+    .text h1 {
+        font-size: 10vw;
+    }
+    .bottom  {
+        flex-direction: column;
+        min-height: 20vh;
+    }
+    .b1 {
+        width: 100%;
+    }
+    .b2 {
+        width: 100%;
+        min-height: 40vh;
+    }.b3 {
+        width: 100%;
+        flex-direction: column;
+    }.b4 {
+        width: 100%;
+    }
+    .b3botm {
+        min-height: 40vh;
+    }
+}
